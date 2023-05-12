@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: auto;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1d1e40;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.grid-system {
+    height: auto;
+    width: 1200px;
+    padding: 16px;
+}
+
+.dflex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.dflex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.navigation {
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    height: auto;
+    width: 128px;
+}
+
+.logo>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#typing-text {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 800;
+    color: #1d1e40;
+}
+
+.navbar {
+    background-image: radial-gradient(#30336b, #1d1e40);
+    padding: 16px;
+}
+
+.navbar>ul {
+    list-style-type: none;
+}
+
+.navbar>ul>li {
+    display: flex;
+}
+
+.navbar>ul>li:not(:last-of-type) {
+    margin-right: 16px;
+}
+
+.navbar>ul>li>a {
+    position: relative;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 8px;
+    transition: color 320ms linear, border-bottom 320ms linear;
+    z-index: 0;
+}
+
+.navbar>ul>li>a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: height 320ms linear;
+    z-index: -1;
+}
+
+.navbar>ul>li>a:hover {
+    border-bottom: 2px solid #1d1e40;
+    color: #000000;
+}
+
+.navbar>ul>li>a:hover::before {
+    height: 100%;
+}
+
+.header-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/overlay/grid.png");
+    backdrop-filter: brightness(0.64) saturate(1.5);
+    filter: blur(0.64px);
+    background-color: rgba(0, 0, 0, 0.32);
+    background-repeat: repeat;
+}
