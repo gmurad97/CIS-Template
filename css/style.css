@@ -23,6 +23,7 @@ html {
 
 body {
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 .grid-system {
@@ -75,6 +76,49 @@ body {
 
 .align-items-end {
     align-items: flex-end;
+}
+
+.preloader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 1;
+    transition: opacity 320ms linear;
+    z-index: 1024;
+}
+
+.preloader>.circle {
+    height: 64px;
+    width: 64px;
+    border: 2px solid #1d1e40;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    animation: loading 1024ms linear infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.preloader > p{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header{
+    overflow: hidden;
 }
 
 .navigation {
@@ -169,4 +213,29 @@ body {
     filter: blur(0.64px);
     background-color: rgba(0, 0, 0, 0.32);
     background-repeat: repeat;
+}
+
+.content-overlay{
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    z-index: 1;
+}
+
+.content-overlay>p{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.grid-overlay{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 120px;
+    background-image: url("");
 }

@@ -4,6 +4,16 @@ new TypeIt("#typing-text", {
     waitUntilVisible: true
 }).go();
 
-window.addEventListener("load", function () {
+let bodyStyle = document.body.style;
+let pLoader = document.querySelector(".preloader");
+
+pLoader.addEventListener("transitionend", () => {
+    pLoader.style.display = "none";
+    pLoader.style.zIndex = "-1024";
+})
+
+window.onload = () => {
     new WOW().init();
-});
+    bodyStyle.overflow = "visible";
+    pLoader.style.opacity = "0";
+}
