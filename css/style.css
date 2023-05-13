@@ -164,14 +164,13 @@ header{
 
 .navbar>ul>li>a {
     position: relative;
-    border-bottom: 2px solid transparent;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
     color: #ffffff;
     padding: 8px;
-    transition: color 320ms linear, border-bottom 320ms linear;
+    transition: color 320ms linear;
     z-index: 0;
 }
 
@@ -188,7 +187,6 @@ header{
 }
 
 .navbar>ul>li>a:hover {
-    border-bottom: 2px solid #1d1e40;
     color: #000000;
 }
 
@@ -225,17 +223,79 @@ header{
 }
 
 .content-overlay>p{
-    text-transform: uppercase;
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 12px;
     color: #ffffff;
 }
 
-.grid-overlay{
+
+.m-about-us {
+    margin: 64px 0px;
+}
+
+.m-about-us>img {
+    height: 600px;
+    width: 570px;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.m-au-description {
+    margin-left: 64px;
+}
+
+.m-au-description>h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 12px;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.m-au-description>h3::before {
+    content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 50px;
-    height: 120px;
-    background-image: url("");
+    bottom: -12px;
+    left: 0px;
+    height: 4px;
+    width: 256px;
+    background-color: darkblue;
+}
+
+.m-au-description>p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 32px;
+    color: var(--text-dark-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-line{
+    background-image: radial-gradient(#30336b, #1d1e40);
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 6px;
 }
