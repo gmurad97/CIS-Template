@@ -75,7 +75,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #1D1E40;
-    margin: 64px 0px;
+    margin: 32px 0px;
 }
 
 .heading-text::before {
@@ -365,15 +365,37 @@ body {
         width: 480px;
     }
 
-    .navbar{
+    .navbar {
         flex-direction: column;
     }
 
-    #nav-typing-text{
+    #nav-typing-text {
         margin-bottom: 16px;
     }
-    
-    .ac-description{
+
+    .ac-description {
         margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .grid-system {
+        width: 384px;
+    }
+
+    .navigition {
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-bottom: 16px;
+    }
+
+    #nav-typing-text, #footer-typing-text{
+        font-size: 16px;
+    }
+
+    .owl-item-slider{
+        height: auto;
     }
 }

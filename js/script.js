@@ -49,6 +49,9 @@ $(document).ready(function () {
             },
             480: {
                 items: 2,
+            },
+            360:{
+                items: 1
             }
         }
     });
