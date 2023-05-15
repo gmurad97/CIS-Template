@@ -37,6 +37,20 @@ $(document).ready(function () {
         loop: true,
         dots: false,
         nav: false,
+        responsive: {
+            1200: {
+                items: 5,
+            },
+            992: {
+                items: 4,
+            },
+            768: {
+                items: 3,
+            },
+            480: {
+                items: 2,
+            }
+        }
     });
 });
 
@@ -46,13 +60,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".owl-carousel-partners").owlCarousel({
-/*         animateOut: "animate__flipOutY",
-        animateIn: "animate__flipInY", */
+        /*         animateOut: "animate__flipOutY",
+                animateIn: "animate__flipInY", */
         items: 4,
         margin: 20,
         loop: true,
         dots: false,
         nav: false,
-        
+
     });
 });
