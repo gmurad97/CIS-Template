@@ -1,19 +1,41 @@
-new TypeIt("#typing-text", {
-    strings: "Caspian international services",
+/*WOW ANIMATION INIT*/
+new WOW().init();
+
+/*TYPE IT INIT*/
+new TypeIt("#nav-typing-text", {
+    strings: "caspian international services",
     speed: 128,
     waitUntilVisible: true
 }).go();
 
-let bodyStyle = document.body.style;
-let pLoader = document.querySelector(".preloader");
+new TypeIt("#footer-typing-text", {
+    strings: "caspian international services",
+    speed: 128,
+    waitUntilVisible: true
+}).go();
 
-pLoader.addEventListener("transitionend", () => {
-    pLoader.style.display = "none";
-    pLoader.style.zIndex = "-1024";
-})
+/*OWL-HEADER-CAROUSEL*/
+$(document).ready(function () {
+    $(".owl-carousel-slider").owlCarousel({
+        animateOut: "animate__flipOutY",
+        animateIn: "animate__flipInY",
+        autoplay: true,
+        autoplayTimeout: 4096,
+        items: 1,
+        loop: true,
+        dots: false,
+        nav: false
+    });
+});
 
-window.onload = () => {
-    new WOW().init();
-    bodyStyle.overflow = "visible";
-    pLoader.style.opacity = "0";
-}
+$(document).ready(function () {
+    $(".owl-carousel-partners").owlCarousel({
+/*         animateOut: "animate__flipOutY",
+        animateIn: "animate__flipInY", */
+        items: 3,
+        loop: true,
+        dots: false,
+        nav: false,
+        center:true
+    });
+});
