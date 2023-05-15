@@ -30,6 +30,22 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".owl-carousel-partners").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 1536,
+        autoplayHoverPause: true,
+        items: 4,
+        loop: true,
+        dots: false,
+        nav: false,
+    });
+});
+
+
+
+
+
+$(document).ready(function () {
+    $(".owl-carousel-partners").owlCarousel({
 /*         animateOut: "animate__flipOutY",
         animateIn: "animate__flipInY", */
         items: 4,
