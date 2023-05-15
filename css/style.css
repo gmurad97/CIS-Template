@@ -223,7 +223,7 @@ body {
 }
 
 .owl-item-slider {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center center;
@@ -395,7 +395,7 @@ body {
         font-size: 16px;
     }
 
-    .owl-item-slider{
+/*     .owl-item-slider{
         height: auto;
-    }
+    } */
 }
