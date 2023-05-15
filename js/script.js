@@ -32,10 +32,11 @@ $(document).ready(function () {
     $(".owl-carousel-partners").owlCarousel({
 /*         animateOut: "animate__flipOutY",
         animateIn: "animate__flipInY", */
-        items: 3,
+        items: 4,
+        margin: 20,
         loop: true,
         dots: false,
         nav: false,
-        center:true
+        
     });
 });

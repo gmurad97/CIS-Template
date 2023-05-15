@@ -69,6 +69,13 @@ body {
     padding: 8px;
 }
 
+.heading-text{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
 .navigation-wrapper {
     overflow: hidden;
     margin-bottom: 8px;
@@ -237,25 +244,27 @@ body {
     border-radius: 8px;
 }
 
-.owl-carousel-partners{
+/* .owl-carousel-partners{
+    display: flex;
+    align-items: center;
     background-image: radial-gradient(#2C2D60, #1D1E40);
     padding: 16px 0px;
     margin-bottom: 64px;
 }
 
 .owl-item-partners{
-    width: 160px !important;
+    width: 128px;
+    height: 128px;
     object-fit: cover;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+} */
+
+
+.owl-item-partners>img{
+    width: 75px;
 }
-
-
-
-
-
-
-
-
 
 
 
