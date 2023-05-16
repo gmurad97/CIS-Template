@@ -50,26 +50,9 @@ $(document).ready(function () {
             480: {
                 items: 2,
             },
-            360:{
+            360: {
                 items: 1
             }
         }
-    });
-});
-
-
-
-
-
-$(document).ready(function () {
-    $(".owl-carousel-partners").owlCarousel({
-        /*         animateOut: "animate__flipOutY",
-                animateIn: "animate__flipInY", */
-        items: 4,
-        margin: 20,
-        loop: true,
-        dots: false,
-        nav: false,
-
     });
 });
