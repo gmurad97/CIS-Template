@@ -223,10 +223,14 @@ body {
 }
 
 .owl-item-slider {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.owl-item-slider>img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center center;
 }
 
 .about-wrapper {
@@ -387,15 +391,12 @@ body {
         flex-direction: column;
     }
 
-    .logo{
+    .logo {
         margin-bottom: 16px;
     }
 
-    #nav-typing-text, #footer-typing-text{
+    #nav-typing-text,
+    #footer-typing-text {
         font-size: 16px;
     }
-
-/*     .owl-item-slider{
-        height: auto;
-    } */
 }
