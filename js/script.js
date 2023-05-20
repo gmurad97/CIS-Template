@@ -6,11 +6,12 @@ pLoader.addEventListener("transitionend", () => {
     pLoader.style.zIndex = "-1024";
 })
 
-window.onload = () => {
+window.addEventListener("load",function(){
     new WOW().init();
     bodyStyle.overflow = "visible";
     pLoader.style.opacity = "0";
-}
+});
+
 
 /*WOW ANIMATION INIT*/
 
@@ -30,10 +31,11 @@ new TypeIt("#footer-typing-text", {
 /*OWL-HEADER-CAROUSEL*/
 $(document).ready(function () {
     $(".owl-carousel-slider").owlCarousel({
-        animateOut: "animate__flipOutY",
-        animateIn: "animate__flipInY",
+        /*animateOut: "animate__flipOutY",
+        animateIn: "animate__flipInY", */
         autoplay: true,
         autoplayTimeout: 4096,
+        autoplaySpeed: 2048,
         items: 1,
         loop: true,
         dots: false,
