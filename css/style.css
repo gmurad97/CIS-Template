@@ -315,7 +315,7 @@ body {
 }
 
 .owl-carousel-partners {
-    background-color: rgba(44, 45, 96, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 16px 0px;
     margin-bottom: 64px;
 }
@@ -327,8 +327,7 @@ body {
 }
 
 .owl-item-partners>img {
-    height: 128px;
-    width: 128px;
+    height: 96px;
     object-fit: cover;
     object-position: center center;
 }

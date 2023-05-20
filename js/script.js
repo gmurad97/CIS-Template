@@ -44,7 +44,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".owl-carousel-partners").owlCarousel({
         autoplay: true,
-        autoplayTimeout: 1536,
+        autoplayTimeout: 2816,
+        autoplaySpeed: 2048,
         autoplayHoverPause: true,
         items: 4,
         loop: true,
