@@ -1,19 +1,21 @@
 let bodyStyle = document.body.style;
 let pLoader = document.querySelector(".preloader");
 
-pLoader.addEventListener("transitionend", () => {
+pLoader.addEventListener("transitionend", function () {
     pLoader.style.display = "none";
     pLoader.style.zIndex = "-1024";
-})
+});
 
-window.addEventListener("load",function(){
+pLoader.addEventListener("webkitTransitionEnd", function () {
+    pLoader.style.display = "none";
+    pLoader.style.zIndex = "-1024";
+});
+
+window.addEventListener("load", function () {
     new WOW().init();
     bodyStyle.overflow = "visible";
     pLoader.style.opacity = "0";
 });
-
-
-/*WOW ANIMATION INIT*/
 
 /*TYPE IT INIT*/
 new TypeIt("#nav-typing-text", {
