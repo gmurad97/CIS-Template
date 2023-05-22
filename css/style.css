@@ -15,6 +15,7 @@ html {
 
 body {
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 .dflex-column {
@@ -315,7 +316,6 @@ body {
 }
 
 .owl-carousel-partners {
-    background-color: rgba(0, 0, 0, 0.05);
     padding: 16px 0px;
     margin-bottom: 64px;
 }
