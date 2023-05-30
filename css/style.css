@@ -261,13 +261,6 @@ body {
     height: 100%;
 }
 
-
-
-
-
-
-
-
 .dropdown_menu{
     position: relative;
     display: flex;
@@ -285,9 +278,9 @@ body {
     position: absolute;
     width: 200px;
     top: 34px;
-    left: -64px;
+    left: -50px;
     background-color: rgba(228, 233, 247, 0.64);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(7px);
     padding: 8px;
     border-radius: 6px;
     opacity: 0;
@@ -340,18 +333,6 @@ body {
     opacity: 1;
     z-index: 64;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .owl-item-slider {
     height: 100vh;
