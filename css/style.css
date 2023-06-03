@@ -261,20 +261,21 @@ body {
     height: 100%;
 }
 
-.dropdown_menu{
+.dropdown_menu {
     position: relative;
     display: flex;
     flex-direction: column;
 }
-.dropdown_menu i{
+
+.dropdown_menu i {
     margin-left: 4px;
 }
 
-.dropdown_menu>a{
+.dropdown_menu>a {
     z-index: 128 !important;
 }
 
-.dropdown_menu>ul{
+.dropdown_menu>ul {
     position: absolute;
     width: 200px;
     top: 34px;
@@ -287,16 +288,17 @@ body {
     z-index: -1024;
     transition: opacity 384ms linear;
 }
-.dropdown_menu>ul>li{
+
+.dropdown_menu>ul>li {
     display: flex;
 
 }
 
-.dropdown_menu>ul>li:not(:last-of-type){
+.dropdown_menu>ul>li:not(:last-of-type) {
     margin-bottom: 8px;
 }
 
-.dropdown_menu>ul>li>a{
+.dropdown_menu>ul>li>a {
     position: relative;
     width: 100%;
     font-size: 14px;
@@ -308,7 +310,7 @@ body {
     padding: 6px;
 }
 
-.dropdown_menu>ul>li>a::before{
+.dropdown_menu>ul>li>a::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -321,15 +323,15 @@ body {
     z-index: -1;
 }
 
-.dropdown_menu>ul>li>a:hover::before{
+.dropdown_menu>ul>li>a:hover::before {
     width: 100%;
 }
 
-.dropdown_menu>ul>li>a:hover{
+.dropdown_menu>ul>li>a:hover {
     color: #FFFFFF;
 }
 
-.dropdown_menu:hover ul{
+.dropdown_menu:hover ul {
     opacity: 1;
     z-index: 64;
 }
@@ -431,34 +433,34 @@ body {
     border-radius: 16px;
 }
 
-.main-content{
+.main-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
-.main-content>img{
-    width: 64%;
+.main-content>img {
+    width: 484px;
     height: 512px;
     object-fit: cover;
     object-position: center;
     border-radius: 16px;
-    margin-bottom: 16px;
-    margin-top: 16px;
     box-shadow: 0px 0px 2px #000000;
     transition: box-shadow 256ms linear;
+    margin: 16px 0px;
 }
 
-.main-content>img:hover{
+.main-content>img:hover {
     box-shadow: 0px 0px 16px #000000;
 }
 
-.main-content>p{
+.main-content>p {
+    max-width: 525px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    line-height: 48px;
+    line-height: 40px;
     color: #000000;
 }
 
@@ -476,9 +478,11 @@ body {
     .ac-description>div[id="aboutus_typing_text"] {
         width: 100%;
     }
+
     .about-content {
         flex-direction: column;
     }
+
     .ac-content>video {
         width: 100%;
         height: auto;
@@ -492,6 +496,18 @@ body {
 
     .about-content {
         flex-direction: column;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content>img {
+        width: 100%;
+    }
+
+    .main-content>p {
+        max-width: 100%;
     }
 
     .ac-content>video {
