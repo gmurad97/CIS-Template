@@ -30,6 +30,16 @@ new TypeIt("#footer-typing-text", {
     waitUntilVisible: true
 }).go();
 
+
+if(!(document.querySelector("#aboutus_typing_text") == null)){
+    new TypeIt("#aboutus_typing_text", {
+        strings: "The \"Caspian International Services\" company presents a wide array of exceptional possibilities for conducting maritime operations with the utmost professionalism.\n\nEstablished in 2021, Caspian International Services  is a renowned shipping agency that has made remarkable strides in the industry. Our company encompasses an extensive range of services, catering not only to the Caspian Sea region but beyond.",
+        speed: 24,
+        waitUntilVisible: true
+    }).go();
+}
+
+
 /*OWL-HEADER-CAROUSEL*/
 $(document).ready(function () {
     $(".owl-carousel-slider").owlCarousel({
