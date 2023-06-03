@@ -431,14 +431,35 @@ body {
     border-radius: 16px;
 }
 
-.inf-text{
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content>img{
+    width: 64%;
+    height: 512px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    box-shadow: 0px 0px 2px #000000;
+    transition: box-shadow 256ms linear;
+}
+
+.main-content>img:hover{
+    box-shadow: 0px 0px 16px #000000;
+}
+
+.main-content>p{
     font-weight: 500;
     font-size: 20px;
     text-align: justify;
     line-height: 48px;
     color: #000000;
-    border-left: 2px solid #1D1E40;
-    padding-left: 12px;
 }
 
 @media screen and (max-width:1200px) {
