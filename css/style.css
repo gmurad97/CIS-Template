@@ -282,7 +282,7 @@ body {
     top: 34px;
     left: -50px;
     background-color: rgba(228, 233, 247, 0.64);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(3px);
     padding: 8px;
     border-radius: 6px;
     opacity: 0;
